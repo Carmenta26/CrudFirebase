@@ -4,8 +4,8 @@ import android.os.Parcel
 import android.os.Parcelable
 
 data class Luchador(
-    var id: Int,
-    var nombre: String
+    var id: Int = 0,
+    var nombre: String = ""
 ) : Parcelable {
     constructor(parcel: Parcel) : this(
         parcel.readInt(),
